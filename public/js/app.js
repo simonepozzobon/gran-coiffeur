@@ -2075,9 +2075,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      swiperOption: {// some swiper options/callbacks
-        // 所有的参数同 swiper 官方 api 参数
-        // ...
+      swiperOption: {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 7000
+        }
       }
     };
   },
@@ -6730,7 +6733,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Nunito);", ""]);
 
 // module
-exports.push([module.i, ".mega-slide[data-v-f728d9f8] {\n  position: relative;\n  overflow: hidden;\n  padding: 3rem;\n  margin: 1.25rem;\n}\n.mega-slide__image[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  left: 0;\n  top: 0;\n  height: 100%;\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -webkit-filter: blur(0.3090234858rem) grayscale(100%);\n          filter: blur(0.3090234858rem) grayscale(100%);\n}\n.mega-slide__image-clean[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: auto;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  -webkit-mask-image: linear-gradient(-125deg, #1e1a1e 0%, rgba(30, 26, 30, 0) 58%);\n          mask-image: linear-gradient(-125deg, #1e1a1e 0%, rgba(30, 26, 30, 0) 58%);\n  z-index: 1;\n}\n.mega-slide__overlay-x[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(to right, rgba(30, 26, 30, 0.9), rgba(30, 26, 30, 0.4) 65%, rgba(30, 26, 30, 0));\n  background-repeat: no-repeat;\n  z-index: 2;\n}\n.mega-slide__overlay-y[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(rgba(30, 26, 30, 0), rgba(30, 26, 30, 0.4) 75%, rgba(30, 26, 30, 0.9));\n  background-repeat: no-repeat;\n  z-index: 2;\n}\n.mega-slide__overlay-d[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(30deg, rgba(30, 26, 30, 0.56), rgba(30, 26, 30, 0));\n  background-repeat: repeat-x;\n  z-index: 2;\n}\n.mega-slide__container[data-v-f728d9f8] {\n  margin: 5rem auto;\n}\n.mega-slide__content[data-v-f728d9f8] {\n  position: relative;\n  z-index: 3;\n}\n.mega-slide__head[data-v-f728d9f8] {\n  color: #fff;\n  font-size: 3.5rem;\n  text-transform: uppercase;\n  font-weight: bold;\n}\n.mega-slide__text[data-v-f728d9f8] {\n  color: #fff;\n  font-weight: 300;\n}\n.mega-slide__button[data-v-f728d9f8] {\n  z-index: 3;\n}", ""]);
+exports.push([module.i, ".mega-slide[data-v-f728d9f8] {\n  position: relative;\n  overflow: hidden;\n  padding: 3rem;\n  margin: 1.25rem;\n}\n.mega-slide__image[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  left: 0;\n  top: 0;\n  height: 100%;\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  -webkit-filter: blur(0.3090234858rem) grayscale(100%);\n          filter: blur(0.3090234858rem) grayscale(100%);\n}\n.mega-slide__image-clean[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: auto;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  -webkit-mask-image: linear-gradient(-125deg, #1e1a1e 0%, rgba(30, 26, 30, 0) 58%);\n          mask-image: linear-gradient(-125deg, #1e1a1e 0%, rgba(30, 26, 30, 0) 58%);\n  z-index: 1;\n}\n.mega-slide__overlay-x[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(to right, rgba(30, 26, 30, 0.9), rgba(30, 26, 30, 0.4) 65%, rgba(30, 26, 30, 0));\n  background-repeat: no-repeat;\n  z-index: 2;\n}\n.mega-slide__overlay-y[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(rgba(30, 26, 30, 0), rgba(30, 26, 30, 0.4) 75%, rgba(30, 26, 30, 0.9));\n  background-repeat: no-repeat;\n  z-index: 2;\n}\n.mega-slide__overlay-d[data-v-f728d9f8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n  background-image: linear-gradient(30deg, rgba(30, 26, 30, 0.56), rgba(30, 26, 30, 0));\n  background-repeat: repeat-x;\n  z-index: 2;\n}\n.mega-slide__container[data-v-f728d9f8] {\n  margin: 5rem auto;\n}\n.mega-slide__content[data-v-f728d9f8] {\n  position: relative;\n  z-index: 3;\n}\n.mega-slide__head[data-v-f728d9f8] {\n  color: #387B85;\n  font-size: 3.5rem;\n  text-transform: uppercase;\n  font-weight: bold;\n}\n.mega-slide__text[data-v-f728d9f8] {\n  color: #fff;\n  font-weight: 300;\n}\n.mega-slide__button[data-v-f728d9f8] {\n  z-index: 3;\n}", ""]);
 
 // exports
 
@@ -46681,7 +46684,7 @@ var render = function() {
         _c(
           "a",
           {
-            staticClass: "mega-slide__button btn btn-outline-gc-green",
+            staticClass: "mega-slide__button btn btn-outline-gc-green-inv",
             attrs: { href: "#" }
           },
           [_vm._t("button")],

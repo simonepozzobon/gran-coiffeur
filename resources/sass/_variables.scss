@@ -46,6 +46,7 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $gc-green:    #387B85 !default;
 $gc-black:    #1E1A1E !default;
+$gc-green-inv:    invert($gc-green, 100%) !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -66,6 +67,7 @@ $colors: map-merge(
     "gray-dark":  $gray-800,
     "black":      $black,
     "gc-green":      $gc-green,
+    "gc-green-inv":   $gc-green-inv,
     "gc-black":      $gc-black,
   ),
   $colors
@@ -118,8 +120,8 @@ $yiq-text-light:            $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
-$enable-rounded:                              true !default;
-$enable-shadows:                              false !default;
+$enable-rounded:                              false !default;
+$enable-shadows:                              true !default;
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;

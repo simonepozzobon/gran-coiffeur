@@ -21,7 +21,7 @@
                 <slot></slot>
             </p>
             <a
-                class="mega-slide__button btn btn-outline-gc-green"
+                class="mega-slide__button btn btn-outline-gc-green-inv"
                 href="#"
             >
                 <slot name="button"></slot>
@@ -124,7 +124,7 @@ export default {
     }
 
     &__head {
-        color: $white;
+        color: $gc-green;
         font-size: $display4-size;
         text-transform: uppercase;
         font-weight: bold;

@@ -68,9 +68,11 @@ export default {
     data: function () {
         return {
             swiperOption: {
-                // some swiper options/callbacks
-                // 所有的参数同 swiper 官方 api 参数
-                // ...
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 7000,
+                },
             }
         }
     },
